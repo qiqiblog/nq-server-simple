@@ -2,16 +2,14 @@
 nodequery-server nodejs version
 
 具体部署方法(以centos7为例)：  
-第一步、安装nodejs,并更新到最新稳定版
-
+第一步、安装nodejs,并更新到最新稳定版  
 yum -y install nodejs
 npm install -g n  #安装n版本管理工具 yarn管理工具和pm2进程守护工具  
 n stable  
 npm install -g yarn pm2  
 
 
-第二步、克隆代码，安装依赖
-
+第二步、克隆代码，安装依赖  
 yum -y install git  #安装git  
 git clone https://github.com/cnly1987/nq-server-simple.git  #克隆代码  
 cd nq-server-simple  
@@ -20,9 +18,7 @@ node ace build
 
 
 第三步：配置并运行  
-
 在.env文件夹按照 格式填写mongodb连接地址。【如何安装mongodb这里就不介绍了】,记得修改下APIKEY  
-
 然后把tmp文件夹和.env 拷贝到build文件夹。  
 .env 文件可以设置运行的端口，自己自行设置。  
 执行pm2 start build/server.js  
