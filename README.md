@@ -13,7 +13,7 @@ npm install -g yarn pm2
 yum -y install git  #安装git  
 git clone https://github.com/cnly1987/nq-server-simple.git  #克隆代码  
 cd nq-server-simple  
-yarn      #安装依赖
+yarn      #安装依赖  
 node ace build  
 
 
