@@ -1,7 +1,7 @@
 # nq-server-simple
 nodequery-server nodejs version
 
-具体部署方法(以centos7为例)：
+具体部署方法(以centos7为例)：  
 初始化账号密码admin/admin  
 第一步、安装nodejs,并更新到最新稳定版  
 yum -y install nodejs  
